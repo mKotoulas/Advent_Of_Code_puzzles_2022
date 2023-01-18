@@ -1,7 +1,7 @@
 def get_input():
     with open ("input.txt","r") as f: return f.read().splitlines()  
 
-def false_assumption_score(): 
+def false_assumption_score()->int: 
     
     def symbol_score(pair:list[str])->int:  
         symbol_scores={"X":1,"Y":2,"Z":3}     
@@ -19,7 +19,7 @@ def false_assumption_score():
     for round in rounds:total+=(symbol_score(round)+round_outcome_score(round))   
     return total 
 
-def true_assumption_score():
+def true_assumption_score()->int:
 
     def round_outcome_score(pair:list[str])->int:
         symbols_to_points_table={"X":0,"Y":3,"Z":6} 
