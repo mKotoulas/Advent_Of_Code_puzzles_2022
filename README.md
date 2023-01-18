@@ -1,7 +1,7 @@
 # Advent Of Code puzzles 
 Those puzzles are extremely popular but in case you haven't heard of the Aoc event you can find it here: https://adventofcode.com/
 
-A series of 25 puzzles cointaing 2 part each, posted one every day, from Dec 1 to Dec 25.
+A series of 25 puzzles containing 2 parts each, posted one every day, from Dec 1 to Dec 25.
 
 Tried this year's puzzles using Python3 and specifically Python3.6 but I am confident enough that all the code snippets will run with no problem if you use a newer version of Python to execute them. 
 
