@@ -33,10 +33,6 @@ def find_message():
     for command in commands:
         cargo_dict=execute_command(parse_command(command),cargo_dict,mode="9000")
         cargo_dict_copy=execute_command(parse_command(command),cargo_dict_copy,mode="9001")
-    ''' 
-    for command in commands:cargo_dict=execute_command(parse_command(command),cargo_dict,mode="9000") 
-    for command in commands:cargo_dict_copy=execute_command(parse_command(command),cargo_dict_copy,mode="9001")
-    '''  
     msg_9000=f"{''.join([value[-1] for value in cargo_dict.values()])}"
     msg_9001=f"{''.join([value[-1] for value in cargo_dict_copy.values()])}"
     return (msg_9000,msg_9001)
